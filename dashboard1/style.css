@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+.sidebar{
+    width: 12rem;
+    height: 100%;
+    position: fixed;
+    background: white;
+    border-right: 1px solid rgb(190, 176, 176);
+    overflow: auto;
+}
+
+.navigation{
+    width: 100%;
+    margin-top: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.navigation .dot-icn{
+    margin-left: 30px;
+    
+}
+.menus-user{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.navigation ul{
+  display: flex;
+  flex-direction: column;
+     
+} 
+.navigation ul li{
+    
+    list-style: none;
+    display: flex;
+}
+.navigation ul li a{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.navigation ul li a .icon{
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+    color: black;
+}
+.navigation ul li a .menuName{
+    color: black;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.navigation ul li .menu:hover{
+    width: 100%;
+    border-left: 3px solid black;
+    outline: none;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.user .image{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: wheat;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.user img{
+    width: 100%;
+    object-fit: cover;
+}
+.user .image .active{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: green;
+    margin-left: 30px;
+    margin-bottom: 5px;
+   
+}
+
+/* main */
+
+.main{
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    width: calc(100% - 300px);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow-x: hidden;
+}
+.main .details{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.searchbar{
+    position: relative;
+    width: 300px;
+}
+.searchbar label{
+    position: relative;
+    width: 100%;
+}
+.searchbar label input{
+    width: 100%;
+    height: 30px;
+    padding: 15px 30px;
+    border: 1px solid rgb(151, 145, 145);
+    border-radius: 10px;
+    outline: none;
+}
+.searchbar label ion-icon{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.details{
+    width: 100%;
+}
+.header{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    position: relative;
+    width: 100px;
+}
+.btn label{
+    position: relative;
+    width: 100%;
+}
+.btn label input{
+    width: 100%;
+    height: 30px;
+    padding: 15px 30px;
+    border: 1px solid rgb(151, 145, 145);
+    border-radius: 10px;
+    outline: none;
+}
+.btn label ion-icon{
+    position: absolute;
+    top: 0px;
+    left: 70px;
+}
+.cards{
+   width: 100%;
+   display: grid;
+   gap: 3rem;
+}
+.card1{
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px;
+    padding-right: 0!important;
+    background:#FAF8F4;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card101{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+.card101 .img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background:#E3E0D3;
+}
+.card101 .img ion-icon{
+    margin-top: 10px;
+    margin-left: 13px;
+    font-size: 1.3rem;
+   
+}
+.card101 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card101 .content p{
+    font-size:large;
+}
+.card101 .content h2{
+    font-size: xxx-large;
+}
+.card2{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.card202{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+.card202 .card-content{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.card202 .card-content p{
+    color:#baa6a6;
+} 
+.color1{
+    background: #FFEFE2;
+}
+.color2{
+    background: #EFFCEF;
+}
+.color3{
+    background: #E6F5F9;
+}
+.color4{
+    background: #F4F6FA;
+}
+.statistics{ 
+    width: 60%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    background: black;
+    color: white;
+    gap: 10px;
+}
+.statistics .sales-revenue{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+.statistics .sales-revenue .state{
+    
+margin-top: 1rem;
+    
+display: flex;
+    
+gap: 30px;
+}
+.statistics .sales-revenue .state .img{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background: #F0FCED;
+}
+.statistics .sales-revenue .state .img ion-icon{
+   color: black;
+}
+.statistics .sales-revenue .state .details h3{
+    font-size:large;
+}
+.statistics .sales-revenue .state .details p{
+    font-size:small;
+}
+.statistics .statistics-graph{
+   margin-top: 1rem;
+   width: 100%;
+   height: 100%;
+}
+.statistics-graph .graphs .numbers{
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+.statistics-graph .graphs{
+    display: flex;
+    /* justify-content: flex-start; */
+    gap: .3rem;
+    margin-top: 1rem;
+}
+.statistics-graph .graphs .graph1{
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ gap: 1rem;
+
+}
+.tweenty-percent{
+       width: 1.3rem;
+       height: 3rem;
+       background: white;
+       border-radius: 5px;
+}
+.thirty-percent{
+    width: 1.3rem;
+    height: 4rem;
+    background: aqua;
+    border-radius: 5px;
+}
+.eighty-percent{
+    width: 1.3rem;
+    height: 9rem;
+    background: white;
+    border-radius: 5px;
+}
+.fourty-percent{
+    width: 1.3rem;
+    height: 5rem;
+    background: aqua;
+    border-radius: 5px;
+}
+.thirty-percent{
+    width: 1.3rem;
+    height: 4rem;
+    background: aqua;
+    border-radius: 5px;
+}
+/* media query */
+
+
+@media (width:1366px){
+    .sidebar .navigation{
+        gap:30px
+    }
+    .sidebar .navigation .menus-user{
+        gap: 50px;
+    }
+    .main{
+        left: 240px;
+    }
+    .header{
+        margin-top: 35px;
+    }
+    .cards{
+        gap:1rem
+    }
+    .card1{
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .card101 .content p{
+    font-size:1rem;
+    }
+    .card101 .content h2{
+    font-size: 1.5rem;
+    }
+    .card202{
+        gap: 1rem;
+        padding: .5rem;
+    }
+    .card2 .card202 .card-content h2{
+        font-size: 1.2rem;
+    }
+    .card2 .card202 .card-content p{
+        font-size: .9rem;
+    }
+    .card .percent .num h2 {
+        font-weight: 400;
+    }
+    .statistics{
+        width: 75%;
+    }
+}
+/* @media (max-width:1024px){
+    
+    .main{
+        grid-template-columns: 1fr;
+        gap: 10px;
+       
+    }
+    .statistics{
+        min-width: 80%;
+    }
+}
+@media (max-width:768px){
+    .card2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .statistics{
+        min-width: 50%;
+    }
+    .navigation ul li a .icon{
+        display: none;
+     }
+     .main{
+        width: 80%;
+        left: 210px;
+    }
+}
+@media (max-width:480px){
+    .card2{
+        grid-template-columns: 1fr;
+    }
+    .navigation{
+       display: none;
+    }
+    .main{
+        width: 50%;
+        left: 145px;
+    }
+    .card1{
+       width: auto; 
+      grid-template-columns: 1fr;
+      gap: 15px;
+      align-items: center;
+    }
+} */
+
+
+
+.card-graph1 .card
+{
+  position:relative;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* height:300px; */
+  /* border-radius:4px; */
+  text-align:center;
+  overflow:hidden;
+  /* transition:0.5s; */
+}
+
+
+.card-graph1 .card .percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  /* box-shadow: inset 0 0 50px #000; */
+  background: #FFEFE2;
+  z-index:1000;
+}
+.card-graph1 .card .percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+ .card .percent .num h2
+{
+  color:black;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+
+ .card .percent .num h2 span
+{
+  color:black;
+  font-size:24px;
+  transition:0.5s;
+}
+
+
+.card-graph1 .card .percent svg
+{
+  position:relative;
+  /* width:150px; */
+  /* height:150px; */
+  /* z-index:1000; */
+}
+.card-graph1 .card .percent svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke: #FFEFE2;
+  stroke-width:5px;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+.card-graph1 .card .percent svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card-graph1 .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset: calc(440 - (440 * 55) / 100);
+  stroke: black;
+}
+
+/* 2nd card */
+
+.card-graph2 .card
+{
+  position:relative;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* height:300px; */
+  /* border-radius:4px; */
+  text-align:center;
+  overflow:hidden;
+  /* transition:0.5s; */
+}
+
+
+.card-graph2 .card .percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  /* box-shadow: inset 0 0 50px #000; */
+  background: #EFFCEF;
+  z-index:1000;
+}
+.card-graph2 .card .percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+
+
+
+
+.card-graph2 .card .percent svg
+{
+  position:relative;
+  /* width:150px; */
+  /* height:150px; */
+  /* z-index:1000; */
+}
+.card-graph2 .card .percent svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke: #EFFCEF;
+  stroke-width:5;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+.card-graph2 .card .percent svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card-graph2 .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset: calc(440 - (440 * 30) / 100);
+  stroke: black;
+}
+
+/* 3nd card */
+
+.card-graph3 .card
+{
+  position:relative;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* height:300px; */
+  /* border-radius:4px; */
+  text-align:center;
+  overflow:hidden;
+  /* transition:0.5s; */
+}
+
+
+.card-graph3 .card .percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  /* box-shadow: inset 0 0 50px #000; */
+  background: #E6F5F9;
+  z-index:1000;
+}
+.card-graph3 .card .percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+
+
+
+
+
+.card-graph3 .card .percent svg
+{
+  position:relative;
+  /* width:150px; */
+  /* height:150px; */
+  /* z-index:1000; */
+}
+.card-graph3 .card .percent svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke: #E6F5F9;
+  stroke-width:5;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+.card-graph3 .card .percent svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card-graph3 .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: black;
+}
+/* 4th card */
+
+.card-graph4 .card
+{
+  position:relative;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* height:300px; */
+  /* border-radius:4px; */
+  text-align:center;
+  overflow:hidden;
+  /* transition:0.5s; */
+}
+
+
+.card-graph4 .card .percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  /* box-shadow: inset 0 0 50px #000; */
+  background: #F4F6FA;
+  z-index:1000;
+}
+.card-graph4 .card .percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+
+
+
+.card-graph4 .card .percent svg
+{
+  position:relative;
+  /* width:150px; */
+  /* height:150px; */
+  /* z-index:1000; */
+}
+.card-graph4 .card .percent svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke: #F4F6FA;
+  stroke-width:5;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+.card-graph4 .card .percent svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.card-graph4 .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: black;
+}
+
